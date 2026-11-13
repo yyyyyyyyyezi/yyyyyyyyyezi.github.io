@@ -1,0 +1,98 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="dark" data-astro-cid-z4jru4n3><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="从选方案、部署踩坑，到私密收藏、鼠标动效和更新日历，记录这个博客是怎么一步步搭起来的。"><link rel="alternate" type="application/rss+xml" title="我的博客" href="/rss.xml"><title>从零搭建这个博客：一次和 AI 结对的建站记录 | 我的博客</title><!-- 在页面绘制前确定主题，避免先闪一下深色再变浅色 --><script>
+      (() => {
+        let theme = 'dark';
+        try {
+          const saved = localStorage.getItem('theme');
+          if (saved === 'light' || saved === 'dark') theme = saved;
+          else if (matchMedia('(prefers-color-scheme: light)').matches) theme = 'light';
+        } catch {}
+        document.documentElement.dataset.theme = theme;
+      })();
+    </script><link rel="stylesheet" href="/_astro/BaseLayout.BW4J0uot.css"><style>.article-layout[data-astro-cid-vt34qafq]{grid-template-columns:minmax(0,1fr);align-items:start;gap:2rem;margin-top:1rem;display:grid}.article-layout[data-astro-cid-vt34qafq].has-toc{grid-template-columns:minmax(0,1fr) 240px}.article[data-astro-cid-vt34qafq]{padding:clamp(1.5rem,1rem + 3vw,3rem)}.article-head[data-astro-cid-vt34qafq]{border-bottom:1px solid var(--glass-border);margin-bottom:2rem;padding-bottom:1.5rem}.article-title[data-astro-cid-vt34qafq]{margin:.5rem 0 .75rem;font-size:clamp(1.8rem,1.3rem + 2vw,2.6rem)}.article-desc[data-astro-cid-vt34qafq]{color:var(--muted);margin:0 0 1rem;font-size:1.05rem}.toc[data-astro-cid-vt34qafq]{max-height:calc(100vh - 8rem);font-size:.9rem;position:sticky;top:6rem;overflow-y:auto}.toc-title[data-astro-cid-vt34qafq]{color:var(--fg-strong);margin:0 0 .6rem;font-weight:700}.toc[data-astro-cid-vt34qafq] ol[data-astro-cid-vt34qafq]{border-left:2px solid var(--glass-border);margin:0;padding:0;list-style:none}.toc[data-astro-cid-vt34qafq] li[data-astro-cid-vt34qafq].depth-3{padding-left:.9rem}.toc[data-astro-cid-vt34qafq] a[data-astro-cid-vt34qafq]{color:var(--muted);transition:color var(--duration-fast), border-color var(--duration-fast);border-left:2px solid #0000;margin-left:-2px;padding:.3rem 0 .3rem .85rem;line-height:1.5;display:block}.toc[data-astro-cid-vt34qafq] a[data-astro-cid-vt34qafq]:hover{color:var(--fg)}.toc[data-astro-cid-vt34qafq] a[data-astro-cid-vt34qafq].is-active{color:var(--accent);border-left-color:var(--accent)}.pager[data-astro-cid-vt34qafq]{grid-template-columns:1fr 1fr;gap:1rem;margin-top:2rem;display:grid}.pager-card[data-astro-cid-vt34qafq]{color:var(--fg);gap:.3rem;padding:1.1rem 1.4rem;display:grid}.pager-card[data-astro-cid-vt34qafq].is-next{text-align:right;grid-column:2}.pager-card[data-astro-cid-vt34qafq].is-next .meta[data-astro-cid-vt34qafq]{justify-content:flex-end}.pager-title[data-astro-cid-vt34qafq]{font-weight:700}.pager-card[data-astro-cid-vt34qafq]:hover .pager-title[data-astro-cid-vt34qafq]{color:var(--accent)}@media (width<=900px){.article-layout[data-astro-cid-vt34qafq].has-toc{grid-template-columns:1fr}.toc[data-astro-cid-vt34qafq]{order:-1;max-height:none;position:static}}@media (width<=640px){.pager[data-astro-cid-vt34qafq]{grid-template-columns:1fr}.pager-card[data-astro-cid-vt34qafq].is-next{grid-column:auto}}
+</style></head><body data-astro-cid-z4jru4n3><div class="reading-progress" aria-hidden="true" data-astro-cid-z4jru4n3></div><canvas id="fx-background" class="fx-canvas" aria-hidden="true" data-astro-cid-z4jru4n3></canvas><canvas id="fx-overlay" class="fx-canvas" aria-hidden="true" data-astro-cid-z4jru4n3></canvas><div class="fx-cursor-dot" aria-hidden="true" data-astro-cid-z4jru4n3></div><div class="fx-cursor-ring" aria-hidden="true" data-astro-cid-z4jru4n3></div><header class="site-header" data-astro-cid-z4jru4n3><nav class="nav glass container" aria-label="主导航" data-astro-cid-z4jru4n3><a class="logo" href="/" data-astro-cid-z4jru4n3><span class="logo-mark" data-astro-cid-z4jru4n3>✦</span><span class="gradient-text" data-astro-cid-z4jru4n3>我的博客</span></a><ul class="nav-links" data-astro-cid-z4jru4n3><li data-astro-cid-z4jru4n3><a href="/" data-astro-cid-z4jru4n3>首页</a></li><li data-astro-cid-z4jru4n3><a href="/posts/" aria-current="page" data-astro-cid-z4jru4n3>文章</a></li><li data-astro-cid-z4jru4n3><a href="/tags/" data-astro-cid-z4jru4n3>标签</a></li><li data-astro-cid-z4jru4n3><a href="/archive/" data-astro-cid-z4jru4n3>归档</a></li><li data-astro-cid-z4jru4n3><a href="/about/" data-astro-cid-z4jru4n3>关于</a></li></ul><button class="theme-toggle" type="button" data-theme-toggle aria-label="切换深浅色" data-astro-cid-z4jru4n3><span class="icon-sun" aria-hidden="true" data-astro-cid-z4jru4n3>☀</span><span class="icon-moon" aria-hidden="true" data-astro-cid-z4jru4n3>☾</span></button></nav></header><main class="container" data-astro-cid-z4jru4n3><div class="article-layout has-toc" data-astro-cid-vt34qafq><article class="article glass" data-article data-astro-cid-vt34qafq><header class="article-head" data-astro-cid-vt34qafq><div class="meta" data-astro-cid-vt34qafq><time datetime="2026-11-12T00:00:00.000Z" data-astro-cid-vt34qafq>2026/11/12</time><span data-astro-cid-vt34qafq>约 6 分钟读完</span></div><h1 class="article-title" data-astro-cid-vt34qafq>从零搭建这个博客：一次和 AI 结对的建站记录</h1><p class="article-desc" data-astro-cid-vt34qafq>从选方案、部署踩坑，到私密收藏、鼠标动效和更新日历，记录这个博客是怎么一步步搭起来的。</p><div class="chip-list" data-astro-cid-vt34qafq><a class="chip" href="/tags/建站/" data-astro-cid-vt34qafq>#建站</a><a class="chip" href="/tags/astro/" data-astro-cid-vt34qafq>#Astro</a><a class="chip" href="/tags/记录/" data-astro-cid-vt34qafq>#记录</a></div></header><div class="prose" data-astro-cid-vt34qafq><p>写在最前(此段手打哈)：我确实想有写博客的地方，也觉得是个学习的好机会，怎么搭博客，怎么发布，怎么买域名，怎么守护自己的域名，怎么防止黑客攻击，怎么展示自己的思想和智慧。但是我只是随手在claude ops5-5的对话框里，敲下，给我搭个博客，我想要这个这个，那个那个，然后按照cmd里的要求，一步一步，这件事就做成了。接着是突发奇想的，不想自己写博客可不可以呢？“记录一下我搭博客的过程”也是这简单的一句，仅仅一句，就完成了，甚至是我的口吻，虽然读的出来，字里行间还是有很AI的地方，但是莫名有点难过啊喂！！！！ 完全没有兴奋，完全是怅然若失啊，就，年少不可得之物，这么好得吗？那我的年少算什么呢</p>
+<p>我一直想要一个属于自己的地方：既能写点东西给别人看，求职时也能拿出来；又能把网上看到的好文章收进来，只留给自己。这篇文章记录了这个博客从无到有的过程，包括中间踩过的坑。</p>
+<h2 id="选方案为什么是静态博客">选方案：为什么是静态博客</h2>
+<p>一开始摆在面前的有三条路：</p>
+<ul>
+<li><strong>直接用平台</strong>（公众号、知乎专栏、语雀）：最省事，但内容在别人那里，样式也改不了。</li>
+<li><strong>自建动态博客</strong>（WordPress 之类）：功能全，但要自己维护服务器。</li>
+<li><strong>静态博客</strong>：用 Markdown 写文章，由生成器转成网页，托管在免费平台上。</li>
+</ul>
+<p>我选了第三种，框架用的是 <strong>Astro</strong>。理由很简单：免费、稳定，文章都是 Markdown 文件，以后想搬家也容易。</p>
+<p>我还提了两个要求：</p>
+<ol>
+<li>要有<strong>跟着鼠标动的效果</strong>，不想要一个死板的页面；</li>
+<li><strong>自己写的文章公开</strong>，<strong>网上收藏的内容私密</strong>，避免版权问题。</li>
+</ol>
+<h2 id="鼠标动效">鼠标动效</h2>
+<p>最后做了四种效果，都用 Canvas 自己写，没有引入额外的库：</p>
+<ul>
+<li><strong>粒子连线背景</strong>：背景里飘着一些点，离得近的会连成线；鼠标靠近时，附近的点被吸过来，和鼠标组成淡淡的三角形。</li>
+<li><strong>点击烟花和涟漪</strong>：点一下，会炸开一圈彩色粒子。</li>
+<li><strong>鼠标拖尾</strong>：光标后面拖着一条渐隐的彩带。</li>
+<li><strong>自定义光标</strong>：一个小圆点加一个缓慢跟随的圆环，移到链接上圆环会放大。</li>
+</ul>
+<p>几个细节：系统开了“减少动态效果”时，动效会全部关掉；手机上没有拖尾和自定义光标；页面切到后台时动画会暂停，省电。</p>
+<h2 id="私密收藏怎么保证不泄露">私密收藏：怎么保证不泄露</h2>
+<p>这是整个项目里我最在意的部分。思路是<strong>按目录隔离</strong>：</p>
+<ul>
+<li><code>src/content/posts/</code> 放自己写的文章，公开；</li>
+<li><code>src/content/clips/</code> 放收藏，私密，只在本地预览时能看到。</li>
+</ul>
+<p>用目录区分，而不是在文章里写一个“是否私密”的开关，是因为开关很容易漏写，一漏写就公开了。</p>
+<p>另外还加了一道<strong>构建后的泄漏检查</strong>：每次构建完，脚本会扫描所有公开页面，只要发现收藏的标题、私密链接，或者和私密图片内容一样的文件，就直接让构建失败，网站也就发布不出去。后面会讲到，这道检查真的拦下过一次问题。</p>
+<h2 id="部署一路踩坑">部署：一路踩坑</h2>
+<h3 id="坑一锁文件版本对不上">坑一：锁文件版本对不上</h3>
+<p>第一次部署到 Cloudflare 就失败了，报错说 <code>package.json</code> 和 <code>package-lock.json</code> 不一致。原因是我本地用的是 npm 11，Cloudflare 用的是 npm 10，两个版本对可选依赖的处理不一样。解决办法是用 npm 10 重新生成一次锁文件。</p>
+<h3 id="坑二国内打不开">坑二：国内打不开</h3>
+<p>部署成功后拿到一个 <code>workers.dev</code> 的地址，结果发现这个域名在国内基本打不开。我的博客主要是给自己用、给面试官看，对方打不开就没意义了。</p>
+<p>于是换成了 <strong>GitHub Pages</strong>，地址是 <code>用户名.github.io</code>，国内一般能访问，也不用买域名。</p>
+<h3 id="坑三私有仓库不能直接发布">坑三：私有仓库不能直接发布</h3>
+<p>源码仓库是私有的（因为收藏的原文在里面），但免费账号不能从私有仓库发布 GitHub Pages。最后的做法是：</p>
+<ul>
+<li>源码继续放在私有仓库；</li>
+<li>另建一个公开仓库，<strong>只放构建好的网页</strong>；</li>
+<li>写了一条 <code>npm run deploy</code> 命令：构建 → 泄漏检查 → 推送到公开仓库。</li>
+</ul>
+<p>这样公开仓库里只有网页文件，连 Markdown 源文件都没有。</p>
+<h3 id="坑四git-连不上-github">坑四：git 连不上 GitHub</h3>
+<p>浏览器能上 GitHub，git 推送却一直超时。原因是浏览器走了代理，git 默认不走。给 git 单独配置一下代理就好了。</p>
+<h2 id="捡文章一个带门槛的收藏流程">“捡文章”：一个带门槛的收藏流程</h2>
+<p>我经常在知乎上看到好文章想收藏，于是想做一个“给链接就能收进博客”的工具。为了防止自己无脑囤积，加了一条规则：<strong>每收藏一篇，必须先写至少 50 字的心得</strong>，字数不够就保存不了。</p>
+<p>做的过程中发现：</p>
+<ul>
+<li><strong>知乎不能直接抓取</strong>，脚本请求会返回 403，要求登录。我们没有去绕过它，而是改成从浏览器里导出。</li>
+<li>浏览器扩展 MarkDownload 能把网页存成 Markdown，但在知乎的问题页上<strong>经常抓错回答</strong>，因为一个页面里有好多篇回答。</li>
+<li>最后加了一种更可靠的方式：<strong>选中想要的那篇，按 Ctrl+C，脚本从剪贴板读取</strong>。选了哪篇就是哪篇。</li>
+<li>带图片的文章一开始会让页面报错，因为图片放在导出文件旁边，脚本没有一起复制过来。修好之后，导入时会自动把图片复制到收藏目录。</li>
+</ul>
+<p>现在的流程是：</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">npm</span><span style="color:#9ECBFF"> run</span><span style="color:#9ECBFF"> clip</span><span style="color:#79B8FF"> --</span><span style="color:#9ECBFF"> 知乎链接</span><span style="color:#6A737D">          # 从剪贴板读取</span></span>
+<span class="line"><span style="color:#B392F0">npm</span><span style="color:#9ECBFF"> run</span><span style="color:#9ECBFF"> clip</span><span style="color:#79B8FF"> --</span><span style="color:#9ECBFF"> 导出的文件.md</span><span style="color:#6A737D">     # 导入 Markdown 文件</span></span></code></pre>
+<h2 id="改版从单调到星空玻璃">改版：从单调到“星空玻璃”</h2>
+<p>第一版能用，但太素了。改版时选了“星空玻璃”风格：</p>
+<ul>
+<li>半透明的毛玻璃卡片，背景里有几团缓慢流动的彩色光晕；</li>
+<li>鼠标移到卡片上，卡片会浮起、轻微倾斜，还有一块高光跟着鼠标走；</li>
+<li>首页加了个人介绍、标签云和按月归档；</li>
+<li>文章页加了阅读进度条、预计阅读时间、跟随滚动高亮的目录，以及上一篇、下一篇；</li>
+<li>右上角可以切换深色和浅色，会记住你的选择。</li>
+</ul>
+<p>还加了一个我很喜欢的东西：<strong>像 GitHub 那样的更新日历</strong>。最近一年每天一个格子，哪天更新了文章，那天就亮起来：一篇是天蓝色，篇数越多颜色越深。</p>
+<h2 id="几个有意思的-bug">几个有意思的 bug</h2>
+<h3 id="圆环乱跳">圆环乱跳</h3>
+<p>鼠标移到按钮上时，跟随的圆环会突然跳到别的位置。原因是圆环的位置写在 <code>transform</code> 里，悬停时又用 <code>scale</code> 把它放大了 1.65 倍，结果浏览器把位移也一起放大了，离屏幕左上角越远，跳得越远。把位置改成单独的 <code>translate</code> 属性，问题就解决了。</p>
+<h3 id="私密图片差点混进公开网站">私密图片差点混进公开网站</h3>
+<p>改版后的第一次构建，泄漏检查报错了：一张私密收藏里的图片，被打包进了公开网站的目录。</p>
+<p>原来，虽然私密页面没有生成，但 Astro 构建时会把所有收藏文章里引用的图片都处理一遍。修复办法是：正式构建时，干脆不加载私密收藏，只有本地预览时才加载。</p>
+<p>这次构建失败了，所以图片没有被发布出去。这道检查当初是“以防万一”加的，没想到真的派上了用场。</p>
+<h3 id="卡片倾斜太猛">卡片倾斜太猛</h3>
+<p>卡片的倾斜效果一开始太夸张，看起来像在往下陷。把倾斜角度从 6° 降到 2°，浮起高度从 6px 降到 3px，现在舒服多了。</p>
+<h2 id="写在最后">写在最后</h2>
+<p>回头看，这个博客的技术本身并不复杂，花时间最多的反而是那些“想当然”的地方：版本不一致、国内网络、代理、浏览器扩展抓错内容、图片被意外打包……每个坑都不大，但都得真的踩一遍才知道。</p>
+<p>现在，它终于是一个属于我自己的地方了。</p>
+<hr>
+<blockquote>
+<p>本文由 AI 助手 Claude 根据搭建过程中的对话记录整理生成。</p>
+</blockquote>
+</div></article><nav class="toc glass glass-pad" aria-label="文章目录" data-astro-cid-vt34qafq><p class="toc-title" data-astro-cid-vt34qafq>目录</p><ol data-astro-cid-vt34qafq><li class="depth-2" data-astro-cid-vt34qafq><a href="#选方案为什么是静态博客" data-astro-cid-vt34qafq>选方案：为什么是静态博客</a></li><li class="depth-2" data-astro-cid-vt34qafq><a href="#鼠标动效" data-astro-cid-vt34qafq>鼠标动效</a></li><li class="depth-2" data-astro-cid-vt34qafq><a href="#私密收藏怎么保证不泄露" data-astro-cid-vt34qafq>私密收藏：怎么保证不泄露</a></li><li class="depth-2" data-astro-cid-vt34qafq><a href="#部署一路踩坑" data-astro-cid-vt34qafq>部署：一路踩坑</a></li><li class="depth-3" data-astro-cid-vt34qafq><a href="#坑一锁文件版本对不上" data-astro-cid-vt34qafq>坑一：锁文件版本对不上</a></li><li class="depth-3" data-astro-cid-vt34qafq><a href="#坑二国内打不开" data-astro-cid-vt34qafq>坑二：国内打不开</a></li><li class="depth-3" data-astro-cid-vt34qafq><a href="#坑三私有仓库不能直接发布" data-astro-cid-vt34qafq>坑三：私有仓库不能直接发布</a></li><li class="depth-3" data-astro-cid-vt34qafq><a href="#坑四git-连不上-github" data-astro-cid-vt34qafq>坑四：git 连不上 GitHub</a></li><li class="depth-2" data-astro-cid-vt34qafq><a href="#捡文章一个带门槛的收藏流程" data-astro-cid-vt34qafq>“捡文章”：一个带门槛的收藏流程</a></li><li class="depth-2" data-astro-cid-vt34qafq><a href="#改版从单调到星空玻璃" data-astro-cid-vt34qafq>改版：从单调到“星空玻璃”</a></li><li class="depth-2" data-astro-cid-vt34qafq><a href="#几个有意思的-bug" data-astro-cid-vt34qafq>几个有意思的 bug</a></li><li class="depth-3" data-astro-cid-vt34qafq><a href="#圆环乱跳" data-astro-cid-vt34qafq>圆环乱跳</a></li><li class="depth-3" data-astro-cid-vt34qafq><a href="#私密图片差点混进公开网站" data-astro-cid-vt34qafq>私密图片差点混进公开网站</a></li><li class="depth-3" data-astro-cid-vt34qafq><a href="#卡片倾斜太猛" data-astro-cid-vt34qafq>卡片倾斜太猛</a></li><li class="depth-2" data-astro-cid-vt34qafq><a href="#写在最后" data-astro-cid-vt34qafq>写在最后</a></li></ol></nav></div><nav class="pager" aria-label="上一篇和下一篇" data-astro-cid-vt34qafq><a class="pager-card glass tilt" href="/posts/hello-world/" data-astro-cid-vt34qafq><span class="meta" data-astro-cid-vt34qafq>← 上一篇</span><span class="pager-title" data-astro-cid-vt34qafq>你好，世界</span></a></nav></main><footer class="site-footer container" data-astro-cid-z4jru4n3><span data-astro-cid-z4jru4n3>© 2026 我的博客</span><a href="/rss.xml" data-astro-cid-z4jru4n3>RSS 订阅</a></footer><script type="module" src="/_astro/BaseLayout.astro_astro_type_script_index_0_lang.DyuBD2A_.js"></script></body></html>
