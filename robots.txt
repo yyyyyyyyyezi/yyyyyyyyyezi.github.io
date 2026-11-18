@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /private/
+
+Sitemap: https://yyyyyyyyyezi.github.io/sitemap-index.xml
